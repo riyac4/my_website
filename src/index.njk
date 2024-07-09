@@ -1,0 +1,171 @@
+---
+title: Home Page 
+layout: 'base.njk'
+---
+
+
+  <div class="b-example-divider"></div>
+  
+  <!-- Hero Section -->
+  <main class="text-center mt-2 py-5">
+    <!-- <div class="container"> -->
+        <div class="container col-xxl-9 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                
+                <img src="assets/download (10).png" style="border-radius: 10px;"class="d-block mx-lg-auto img-fluid" alt="My picture" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hello 👋, I'm Riya.</h1>
+                    
+                <p class="lead mb-0">I am a student at UIUC <a target="_blank" href="https://www.illinois.edu ">🧡💙</a> .
+                  I study CS and Linguistics.
+                  In my free time, I love to watch movies <a target="_blank" href="https://www.imdb.com/title/tt0120338/ ">🍿</a>, 
+                  read books <a target="_blank" href="https://www.goodreads.com/book/show/54493401-project-hail-mary/ ">📚</a>, 
+                   and play tennis  <a target="_blank" href="https://www.atptour.com/en/players/carlos-alcaraz/a0e2/overview ">🎾</a>.
+                  Catch me coding in the library with a cup of tea 🫖.
+                  This is my new website! <br>
+                P.S. The picture to the right is entirely made up of Dua Lipa images! ➡️ </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center m-0">
+                        <a href="https://www.instagram.com/riya.c10/" target="_blank" class="btn  "><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/riyac4" target="_blank" class="btn "><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/riya-cherlakola/" target="_blank" class="btn "><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+    <!-- </div> -->
+  </main>
+  
+  
+
+  <!-- About Section -->
+  <!-- <section class=" py-5  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 >About Me</h2>
+          <p style="font-size: 1.3rem" >- I am a student at UIUC 🧡💙. <br>
+            - I study CS and Linguistics.<br>
+            - In my free time I love to watch movies 🍿, read books 📚, make edits ✂️, and play tennis 🎾. <br>
+            - Catch me coding in the library with a cup of tea 🫖. <br>
+            - This is my new website!</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img class="my_image" src="/assets/download (10).png"  alt="Random Fruit Image">
+          </div>
+          
+      </div>
+    </div>
+</section> -->
+<!-- Project Section -->
+<main class=" text-center mt-2 ">
+        
+        <!-- <div class="container col-xxl-9 px-4 pt-5">
+              <div class="row flex-lg-row align-items-center g-5 py-4">
+                <h2 > Latest Projects</h2>
+                {% for i in range(0, 2) %}
+                  {% set post = collections.post[i] %}
+              <div class="col-md-6 mt-0 py-2">
+                <div class="card">
+                  <img src="{{post.data.image}}" class="card-img-top" alt="Card Image">
+                  <div class="card-body d-flex flex-column">
+                    <a href="{{post.url}}"><h5 class="card-title">{{post.data.title}}</h5></a>
+                    <p class="card-text">{{post.data.description}}</p>
+                    <p class="card-text mt-auto align-self-center"><small class="text-muted">{{post.data.year}}</small></p>
+    
+                  </div>
+                </div>
+              </div>
+              {% endfor %} -->
+              <div class="container align-items-center col-xxl-9 px-4 pt-5">
+                <div class="row flex-lg-row ">
+                    <h2 > Latest Projects</h2>
+                    {% for i in range(0, 2) %}
+                  {% set post = collections.post[i] %}   
+                      <div class="col-lg-6 mb-3  ">
+                        <div class="card blog-card">
+                          <img src="{{post.data.image}}" class="card-img-top" alt="Blog Post 1">
+                          <div class="card-body ">
+                            <a href="{{post.url}}"><h5 class="card-title">{{post.data.title}}</h5></a>
+                            <p class="card-text">{{post.data.description}}</p>
+                            <p class="card-text mt-auto align-self-center"><small class="text-muted">{{post.data.year}}</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+              </div>
+  </main>
+<!-- <div class="container py-5">
+    <h2 > Latest Projects</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card blog-card">
+          <img src="https://source.unsplash.com/random/900×700/?code" class="card-img-top" alt="Blog Post 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">This is a preview of the first blog post.</p>
+            <p class="card-text"><small class="text-muted">2023</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card blog-card">
+          <img src="https://source.unsplash.com/random/900×700/?laptop" class="card-img-top" alt="Blog Post 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">This is a preview of the second blog post.</p>
+            <p class="card-text"><small class="text-muted">2023</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Blog Section -->
+  <main class=" text-center mt-2 ">
+    <!-- <div class="container"> -->
+        
+        <div class="container align-items-center col-xxl-9 px-4 pt-5">
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+                <h2 > Latest Posts</h2>
+                <!-- <div class="row justify-content-center"> -->   
+                  <div class="col-md-6 mt-0 py-2">
+                    <div class="card blog-card">
+                      <img src="https://source.unsplash.com/random/900×700/?fruit" class="card-img-top" alt="Blog Post 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Blog 1</h5>
+                        <p class="card-text">This is a preview of the first blog post.</p>
+                        <p class="card-text"><small class="text-muted">Published on May 18, 2023</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-0 py-2">
+                    <div class="card blog-card">
+                      <img src="https://source.unsplash.com/random/900×700/?car" class="card-img-top" alt="Blog Post 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Blog 2</h5>
+                        <p class="card-text">This is a preview of the first blog post.</p>
+                        <p class="card-text"><small class="text-muted">Published on May 18, 2023</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+    <!-- </div> -->
+  </main>
+  
+
+  <!-- Footer -->
+  
+<!-- </div> -->
+<!-- </body>
+
+</html> -->
